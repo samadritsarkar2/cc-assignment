@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.send(`${name} ${number}`);
 });
 
-const port = parseInt(process.env.PORT) || 3000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`helloworld: listening on port ${port}`);
 });
